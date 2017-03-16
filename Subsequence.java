@@ -14,5 +14,6 @@ public static String subsequences(String word) {
          }
          result = result.substring(1); // remove extra leading comma
          return result;
+         //this is a comment
      }
 }

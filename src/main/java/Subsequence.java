@@ -1,29 +1,30 @@
+import java.util.Scanner;
 
-class Subsequence{
+class Subsequence {
 
     public static void main(String[] args) {
-        System.out.println( Subsequence.subsequences("world"));
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a word to know it sub sequence: ");
+        String word = input.next();
+        System.out.println(Subsequence.subSequences(word));
     }
-private static String subsequences(String word) {
 
+    private static String subSequences(String word) {
+        if (word.length() <= 0) {
+            return ""; // base case
+        } else {
+            char firstLetter = word.charAt(0);
+            String restOfWord = word.substring(1);
 
-     if (word.length()<=0) {
-         return ""; // base case
-     } else {
-         char firstLetter = word.charAt(0);
-         String restOfWord = word.substring(1);
-         
-         String subsequencesOfRest = subsequences(restOfWord);
-         
-         StringBuilder result = new StringBuilder();
-         for (String subsequence : subsequencesOfRest.split(",", -1)) {
-             result.append(",").append(subsequence);
-             result.append(",").append(firstLetter).append(subsequence);
-         }
-         result = new StringBuilder(result.substring(1)); // remove extra leading comma
-         return result.toString();
-         //this is a comment
-        // another comment
-     }
-}
+            String subSequencesOfRest = subSequences(restOfWord);
+
+            StringBuilder result = new StringBuilder();
+            for (String subSequence : subSequencesOfRest.split(",", -1)) {
+                result.append(",").append(subSequence);
+                result.append(",").append(firstLetter).append(subSequence);
+            }
+            result = new StringBuilder(result.substring(1)); // remove extra leading comma
+            return result.toString();
+        }
+    }
 }

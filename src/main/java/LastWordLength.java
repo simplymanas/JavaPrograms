@@ -1,9 +1,6 @@
 import java.util.Scanner;
 
-/**
- * Created by Manas Dash on 11/11/17 6:04 PM.
- * Learning REST API
- */
+
 class LastWordLength {
 
     public static void main(String[] args) {
@@ -13,6 +10,7 @@ class LastWordLength {
     private  static int lengthOfLastWord(String input) {
         if(input==null || input.length() == 0)
             return 0;
+
 
         int result = 0;
         int len = input.length();

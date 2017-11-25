@@ -5,7 +5,8 @@ import java.util.Scanner;
  */
 public class Circle extends Shape {
 
-    private   final double radius;
+    private final double radius;
+    private double pi = Math.PI;
 
     public Circle(double radius) {
         this.radius = radius;
@@ -15,8 +16,9 @@ public class Circle extends Shape {
         this(1);
     }
 
+    // A = π r^2
     public double getArea() {
-        return Math.PI * 2 * radius;
+        return Math.PI * Math.pow(radius,2);
     }
 
     //The perimeter of a circle is called the circumference:
@@ -24,5 +26,4 @@ public class Circle extends Shape {
     public double getPerimeter() {
         return Math.PI * radius * radius;
     }
-
 }

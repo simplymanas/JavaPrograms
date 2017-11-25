@@ -19,7 +19,7 @@ public class Triangle extends Shape {
     public double getArea() {
         return getPerimeter() / 2;
     }
-
+    @Override
     public double getPerimeter() {
         return side1 + side2 + side3;
     }

@@ -7,6 +7,9 @@ public class EnumExample {
         Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
     }
     public static void main(String[] args) {
-        System.out.println(Day.Friday);
+        //System.out.println(Day.Friday);
+
     }
+
+
 }

@@ -11,7 +11,6 @@ import java.io.File;
  */
 class ReadIntegerFromAFile {
 
-
     private File GetFile() {
         ClassLoader classLoader = getClass().getClassLoader();
         return new File(classLoader.getResource("SampleFile.txt").getFile());

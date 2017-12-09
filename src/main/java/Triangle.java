@@ -9,7 +9,7 @@ public class Triangle extends Shape {
    public Triangle(){
        this(1,1,1);
    }
-    public Triangle(double side1, double side2, double side3) {
+    private Triangle(double side1, double side2, double side3) {
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;

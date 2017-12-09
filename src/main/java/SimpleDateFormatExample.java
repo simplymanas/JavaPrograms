@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 /**
  * Created by Manas Dash on 25/11/17 11:29 PM.
  */
-public class SimpleDateFormatExample {
+class SimpleDateFormatExample {
 
     public static void main(String[] args) throws ParseException {
         String dateString = "21-05-2017";

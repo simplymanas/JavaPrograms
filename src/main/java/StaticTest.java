@@ -2,11 +2,11 @@
  * Created by Manas Dash on 14/11/17 7:17 AM.
  * Learning REST API
  */
-public class StaticTest {
+class StaticTest {
 private static int counter;
 
-public StaticTest(){
-    this.counter = 16;
+private StaticTest(){
+    counter = 16;
 }
 
 

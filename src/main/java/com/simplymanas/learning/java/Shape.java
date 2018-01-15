@@ -1,3 +1,5 @@
+package com.simplymanas.learning.java;
+
 /**
  * Created by Manas Dash on 17/11/17 8:35 PM.
  * Learning REST API

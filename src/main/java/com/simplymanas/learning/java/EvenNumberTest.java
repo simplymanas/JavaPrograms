@@ -1,3 +1,5 @@
+package com.simplymanas.learning.java;
+
 public class EvenNumberTest {
     public static void main(String[] args) {
         int number = 5;

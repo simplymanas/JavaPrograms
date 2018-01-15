@@ -1,3 +1,5 @@
+package com.simplymanas.learning.java;
+
 import java.util.Scanner;
 
 class Subsequence {

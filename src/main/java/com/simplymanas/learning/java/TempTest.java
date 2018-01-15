@@ -1,4 +1,4 @@
-import java.beans.PersistenceDelegate;
+package com.simplymanas.learning.java;
 
 /**
  * Created by Manas Dash on 01/12/17 12:14 PM.

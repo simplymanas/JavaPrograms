@@ -1,3 +1,5 @@
+package com.simplymanas.learning.java;
+
 import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;

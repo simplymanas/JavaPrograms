@@ -1,3 +1,5 @@
+package com.simplymanas.learning.java;
+
 public class UnitConversion {
     static double  PoundToKilograms(double poundValue){
         return poundValue * 0.45359337;

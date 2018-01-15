@@ -1,4 +1,4 @@
-import sun.plugin.javascript.navig.Array;
+package com.simplymanas.learning.java;
 
 import java.util.Arrays;
 

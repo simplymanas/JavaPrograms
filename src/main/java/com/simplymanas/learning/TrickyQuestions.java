@@ -1,4 +1,4 @@
-package com.simplymanas.learning.java;
+package com.simplymanas.learning;
 
 /**
  * Created by Manas Dash on 26/11/17 7:53 PM.

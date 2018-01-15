@@ -1,4 +1,4 @@
-package com.simplymanas.learning.java;
+package com.simplymanas.learning;
 
 public class UnitConversion {
     static double  PoundToKilograms(double poundValue){

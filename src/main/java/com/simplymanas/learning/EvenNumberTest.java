@@ -1,4 +1,4 @@
-package com.simplymanas.learning.java;
+package com.simplymanas.learning;
 
 public class EvenNumberTest {
     public static void main(String[] args) {

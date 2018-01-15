@@ -1,3 +1,5 @@
+package com.simplymanas.learning.java;
+
 /**
  * Created by Manas Dash on 25/11/17 11:43 PM.
  * 100DaysOFCode

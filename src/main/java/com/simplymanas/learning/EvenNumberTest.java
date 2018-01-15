@@ -5,22 +5,15 @@ public class EvenNumberTest {
         int number = 5;
         int finishNumber = 30;
         while(number <= finishNumber) {
-            if (!IsEvenNumber(number)) {
+            if (IsEvenNumber(number)) {
+                System.out.println("even no:" + number++);
+            } else {
                 number++;
-                continue;
             }
-
-            System.out.println("even no:" + number);
-            number++;
         }
     }
 
     private static  boolean IsEvenNumber(int number){
-        if(number%2==0){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return 0 == (number % 2);
     }
 }

@@ -3,6 +3,7 @@ package com.simplymanas.learning;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.Objects;
 import java.util.Scanner;
 import java.io.File;
 
@@ -15,7 +16,7 @@ class ReadIntegerFromAFile {
 
     private File GetFile() {
         ClassLoader classLoader = getClass().getClassLoader();
-        return new File(classLoader.getResource("SampleFile.txt").getFile());
+        return new File(Objects.requireNonNull(classLoader.getResource("SampleFile.txt")).getFile());
     }
 
     private int ReadIntegerAndSum() {

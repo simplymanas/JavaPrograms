@@ -5,9 +5,8 @@ package com.simplymanas.learning;
  * 100DaysOFCode
  */
 public class TempTest {
-    private String name;
     public TempTest(String name){
-        this.name = name;
+        String name1 = name;
     }
 //    public static void main(String[] args) {
 //        int a[] = {1,2,3}; //initalisation

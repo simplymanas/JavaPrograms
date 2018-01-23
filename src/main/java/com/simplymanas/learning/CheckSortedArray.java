@@ -3,7 +3,8 @@ package com.simplymanas.learning;
 public class CheckSortedArray {
 
     public static void main(String[] args) {
-        int[] Arr = {1,2,2,3,4,6,5};
+        int[] Arr =  {1,2,2,3,4,6,5};
+
         System.out.println(IsArrayInSortedOrder(Arr,Arr.length));
     }
 

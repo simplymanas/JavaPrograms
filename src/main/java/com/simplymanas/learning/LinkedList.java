@@ -1,10 +1,8 @@
 package com.simplymanas.learning;
 
-import java.util.List;
-
 public class LinkedList {
 
-    private int length=0;
+    private int length;
     ListNode head;
 
     public LinkedList(){

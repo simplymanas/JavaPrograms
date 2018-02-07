@@ -21,7 +21,6 @@ import java.util.Arrays;
 
 public class Rotate2DMatrix {
 
-
     public static int[][]  RotateMatrix(int[][] input) {
 
        int[][] output = new int[input.length][input.length];

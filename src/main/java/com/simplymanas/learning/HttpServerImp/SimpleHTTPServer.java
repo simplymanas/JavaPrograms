@@ -14,7 +14,7 @@ public class SimpleHTTPServer {
     public static void main(String[] args) throws Exception {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 
-        int port = 80;
+        int port = 8000;
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
         server.createContext("/ping", new PingHandler());
         server.createContext("/Get", new GetHandler());

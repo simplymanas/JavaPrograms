@@ -12,3 +12,4 @@ public class CheckSortedArray {
         return 1 == length || 2 == length || ((Array[length - 1] >= Array[length - 2]) && IsArrayInSortedOrder(Array, length - 1));
     }
 }
+

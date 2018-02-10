@@ -9,14 +9,17 @@ public class SimplestHTTPServer {
 
         int count = 0;
         do {
-            try (Socket socket = (new ServerSocket(8080)).accept()) {
-                System.out.println(
-                        "Listening for connection on port 8080 ...."
-                                + count++
-                                + " "
-                                + socket.getInetAddress().toString());
-            }
-        } while (true);
+            (new ServerSocket(9000)).accept();
+
+            System.out.println(
+                    "Listening for connection on port 9000 ...."
+                            + count++
+                            + " "
+            );
+        }
+
+        while (true);
+
     }
 }
 

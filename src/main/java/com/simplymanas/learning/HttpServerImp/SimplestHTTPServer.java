@@ -1,8 +1,8 @@
 package com.simplymanas.learning.HttpServerImp;
 
 import java.net.ServerSocket;
-import java.net.Socket;
 
+@SuppressWarnings("InfiniteLoopStatement")
 public class SimplestHTTPServer {
 
     public static void main(String[] args) throws Exception {
@@ -18,7 +18,7 @@ public class SimplestHTTPServer {
             );
         }
 
-        while (true);
+        while (true) ;
 
     }
 }

@@ -4,11 +4,10 @@ import java.util.HashSet;
 
 public class FirstDuplicateNumber {
 
-   private static HashSet<Integer> mySet;
     //private HashSet<Integer> mySet1;
 
     private static int FirstDuplicate(int[] a) {
-        mySet = new HashSet<>();
+        HashSet<Integer> mySet = new HashSet<>();
 
         for (int num: a) {
             if (mySet.contains(num))

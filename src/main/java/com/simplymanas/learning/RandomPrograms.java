@@ -1,8 +1,6 @@
 package com.simplymanas.learning;
 
-import java.util.HashMap;
-
-public class RandomPrograms extends Object{
+public class RandomPrograms {
 
     public static void main(String[] args)   {
         char x; //copyright symbol

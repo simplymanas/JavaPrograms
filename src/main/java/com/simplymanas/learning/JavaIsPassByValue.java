@@ -6,10 +6,10 @@ public class JavaIsPassByValue {
         System.out.println(person.getName());
     }
 
-    public static void changePoint(Person person){
-        person = new Person("Rabi");
+    public static void changePoint(){
+        Person person = new Person("Rabi");
         System.out.println(person.getName());
-        person.setName("Test");;
+        person.setName("Test");
         System.out.println(person.getName());
 
     }
@@ -21,7 +21,7 @@ public class JavaIsPassByValue {
         changeName(person);
         System.out.println(person.getName());
 
-        changePoint(person);
+        changePoint();
         System.out.println(person.getName());
     }
 }

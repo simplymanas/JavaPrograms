@@ -1,7 +1,5 @@
 package com.simplymanas.learning;
 
-import java.util.Date;
-
 public class TinyURL {
 
     private static String baseURL;

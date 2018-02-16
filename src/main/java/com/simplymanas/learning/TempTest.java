@@ -6,7 +6,6 @@ package com.simplymanas.learning;
  */
 public class TempTest {
     public TempTest(String name){
-        String name1 = name;
     }
 //    public static void main(String[] args) {
 //        int a[] = {1,2,3}; //initalisation

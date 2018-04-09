@@ -1,18 +1,18 @@
 package com.simplymanas.learning.DefaultMethod;
 
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PaymentServiceTest {
 
-    @org.junit.jupiter.api.BeforeEach
+    @BeforeEach
     void setUp() {
     }
 
-    @org.junit.jupiter.api.AfterEach
-    void tearDown() {
-    }
+    @AfterEach
+    void tearDown() {}
 
     @Test
     public void ShouldCalculateTheOrderPriceUsingPayPalService() throws Exception{

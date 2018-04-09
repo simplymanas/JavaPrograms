@@ -1,6 +1,7 @@
 package com.simplymanas.learning;
 
 import java.util.Scanner;
+import java.lang.*;
 
 /**
  * Created by Manas Dash on 13/11/17 6:29 AM.
@@ -13,19 +14,20 @@ class PalindromeChecker {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a string: ");
         String word = input.next();
-        System.out.println(isPalindrome(word, 0, word.length()));
+      //  System.out.println(isPalindrome(word, 0, word.length()-1));
+        word=  word.replaceAll("[^A-Za-z0-9]", "").toLowerCase();
+        System.out.println(isPalindrome(word));
     }
 
-//    private static boolean isPalindrome(String word) {
-//        if (word.length() <= 1) {
-//            return true;
-//        }
-//
-//        char firstChar = word.charAt(0);
-//        char lastChar = word.charAt(word.length() - 1);
-//
-//        return firstChar == lastChar && isPalindrome(word.substring(1, word.length() - 1));
-//    }
+    private static boolean isPalindrome(String word) {
+        if (word.length() <= 1) {
+            return true;
+        }
+
+        char firstChar = word.charAt(0);
+        char lastChar = word.charAt(word.length() - 1);
+        return firstChar == lastChar && isPalindrome(word.substring(1, word.length() - 1));
+    }
 
 
     private static boolean isPalindrome(String word, int lower, int upper) {
@@ -35,6 +37,7 @@ class PalindromeChecker {
 
         char firstChar = word.charAt(lower); //m
         char lastChar = word.charAt(upper); //m
+
 
         return firstChar == lastChar && isPalindrome(word, lower + 1, upper - 1);
     }

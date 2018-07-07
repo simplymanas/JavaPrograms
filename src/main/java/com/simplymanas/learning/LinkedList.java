@@ -3,7 +3,8 @@ package com.simplymanas.learning;
 public class LinkedList {
 
     private int length;
-    ListNode head;
+    ListNode head=null;
+    ListNode current=null;
 
     public LinkedList(){
         length = 0;
@@ -13,31 +14,36 @@ public class LinkedList {
         return head;
     }
 
-    public synchronized void InsertAtBegin(ListNode node){
+    public synchronized void insertAtBegin(ListNode node){
         node.setNext(head);
         head=node;
+        current=head;
         length++;
     }
 
-    public synchronized void InsertAtEnd(ListNode node){
+    public synchronized void insertAtEnd(ListNode node){
         if(head == null)
             head = node;
-        else{
-            ListNode current, next;
-
-            for (current=head; (next=current.getNext()) != null; current=next){
-                current.setNext(node);
-            }
+        else {
+            //ListNode current, next;
+            current.setNext(node);
+            node.setNext(null);
+            current = node;
             length++;
         }
     }
+    public  synchronized  void insert(ListNode node){
+        current.setNext(node);
+        current=node;
+        length++;
+    }
 
-    public synchronized void PrintLinkList(){
+    public synchronized void printLinkList(){
         ListNode current=head;
 
         do
         {
-            System.out.println(current.getData() + " => ");
+            System.out.print(current.getData() + " => ");
             current=current.getNext();
         } while(current != null);
     }
@@ -45,7 +51,16 @@ public class LinkedList {
     public static void main(String[] args) {
         LinkedList mylink = new LinkedList();
         ListNode node = new ListNode(15);
-        mylink.InsertAtBegin(node);
-        mylink.PrintLinkList();
+        mylink.insertAtBegin(node);
+
+        ListNode node1 = new ListNode(25);
+
+        mylink.insertAtEnd(node1);
+
+        ListNode node2 = new ListNode(15);
+
+        mylink.insertAtEnd(node2);
+
+        mylink.printLinkList();
     }
 }

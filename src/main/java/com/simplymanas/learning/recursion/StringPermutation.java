@@ -2,11 +2,11 @@ package com.simplymanas.learning.recursion;
 
 public class StringPermutation {
 
-    public static void stringPermutation(String input) {
+    private static void stringPermutation(String input) {
        getAllPermutationOfAString(input, "");
     }
 
-    public static void getAllPermutationOfAString(String input, String prefix) {
+    private static void getAllPermutationOfAString(String input, String prefix) {
         if (input.length() == 0) {
             System.out.println(prefix);
         }
@@ -20,7 +20,7 @@ public class StringPermutation {
     }
 
     public static void main(String[] args) {
-        StringPermutation.stringPermutation("man");
+        StringPermutation.stringPermutation("TESCO");
     }
 }
 

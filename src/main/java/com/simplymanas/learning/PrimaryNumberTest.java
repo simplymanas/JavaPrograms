@@ -26,6 +26,16 @@ public class PrimaryNumberTest {
                 return false;
             }
         }
+
+        //another way
+//        for (int i = 2; i * i <= inputNo; i++) {
+//            if (inputNo % i == 0) {
+//                return false;
+//            }
+//        }
         return true;
     }
 }
+
+
+// O(root of n)

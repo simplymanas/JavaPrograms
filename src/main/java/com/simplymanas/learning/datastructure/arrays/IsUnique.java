@@ -1,11 +1,19 @@
+// implement an algorithm to determine if a string has all unique characters.
+// What if you cannot use additional data structures?
+
+
 package com.simplymanas.learning.datastructure.arrays;
 
+import java.util.Arrays;
 import java.util.HashSet;
 
 public class IsUnique {
 
     public static void main(String[] args) {
-        if (isUnique("The quick brown f"))
+       // if (isUnique("The quick brown fx jmpss"))
+
+         if (isUnique_withoutOtherDataStructures("The quick brown fx jmp s s"))
+
             System.out.println("unique string");
         else
             System.out.println("not unique");
@@ -23,6 +31,19 @@ public class IsUnique {
                 return false;
             else
                 uniqueCharCount.add(c);
+        }
+        return true;
+    }
+//alternate method
+    public  static boolean isUnique_withoutOtherDataStructures(String input){
+        char[] sortedArray = input.toCharArray();
+        Arrays.sort(sortedArray);
+
+        for (int i=0;i<sortedArray.length-1;i++
+             ) {
+            if(Character.isWhitespace(sortedArray[i]))continue;
+            if((sortedArray[i]) == sortedArray[i+1])
+            return false;
         }
         return true;
     }

@@ -32,6 +32,5 @@ public class FirstNonRepeatingCharacter {
         System.out.println(FirstNonRepeatingChar("bcccccb"));
         System.out.println(FirstNonRepeatingChar("z"));
         System.out.println(FirstNonRepeatingChar("bacd"));
-
     }
 }

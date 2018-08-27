@@ -19,6 +19,7 @@ public class BinarySerach {
         }
 
     }
+  
 
     public static int searchBinary(int[] array, int key) {
         return binarySearchRecursive(array, key, 0, array.length - 1);

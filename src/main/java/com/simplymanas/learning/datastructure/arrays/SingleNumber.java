@@ -24,7 +24,7 @@ import java.util.Map;
 public class SingleNumber {
 
     public static int singleNumber(int[] nums) {
-        HashMap<Integer,Integer> map = new HashMap<>();
+        Map<Integer,Integer> map = new HashMap<>();
 
         for (int i = 0; i <nums.length ; i++) {
             if(map.containsKey(nums[i])) {
@@ -43,7 +43,7 @@ public class SingleNumber {
     }
 
     public static void main(String[] args) {
-        int[] input = {11, 11, 3, 3,4,4, 555};
+        int[] input = {11, 11, 3, 3,4,4,4, 55,4};
         System.out.println(Arrays.toString(input));
         System.out.println(singleNumber(input));
     }

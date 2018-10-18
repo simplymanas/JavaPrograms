@@ -19,36 +19,41 @@ Explanation: The array represents the integer 4321.
 
 package com.simplymanas.learning.datastructure.arrays;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class PlusOne {
 
+    public static int[] plusOneToArray(int[] digits) {
+        int[] result = new int[digits.length];
+        int carry = 1;
 
-    public static int[] plusOne(int[] digits) {
-        int[] result = new int[digits.length + 1];
+        for (int i = digits.length - 1; i >= 0; i--) {
+            int sum = digits[i]  + carry;
 
-        if (digits[digits.length - 1] + 1 > 9) {
-            result = new int[digits.length + 1];
-            result = Arrays.copyOf(digits,digits.length+1);
-            result[digits.length-1] = 1;
-            result[digits.length] = 0;
+            if (sum == 10) {
 
-        } else {
-            result = Arrays.copyOf(digits,digits.length);
-
-            result[digits.length - 1] = result[digits.length - 1] + 1;
+                result[i] = 0;
+                carry=1;
+            } else {
+                result[i] = sum;
+                carry = 0;
+            }
+            sum = 0;
         }
+        if (carry == 1) {
+            result = new int[digits.length + 1];
+            result[0] = 1;
+        }
+
         return result;
     }
 
     public static void main(String[] args) {
-        int[] input1 = {4,9,9};
+        int[] input1 = {4, 9, 9};
 
-        int[] input2 = {9,4,9,8,4};
+        int[] input2 = {9};
 
-        System.out.println(Arrays.toString(plusOne(input1)));
+        System.out.println(Arrays.toString(plusOneToArray(input2)));
     }
 }
 

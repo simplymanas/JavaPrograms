@@ -3,7 +3,8 @@ package com.simplymanas.learning.recursion;
 public class StringPermutation {
 
     private static void stringPermutation(String input) {
-       getAllPermutationOfAString(input, "");
+
+        getAllPermutationOfAString(input, "");
     }
 
     private static void getAllPermutationOfAString(String input, String prefix) {
@@ -20,7 +21,8 @@ public class StringPermutation {
     }
 
     public static void main(String[] args) {
-        StringPermutation.stringPermutation("TESCO");
+
+        StringPermutation.stringPermutation("JAVA");
     }
 }
 

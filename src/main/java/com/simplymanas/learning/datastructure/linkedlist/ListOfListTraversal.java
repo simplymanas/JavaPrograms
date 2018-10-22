@@ -47,6 +47,8 @@ public class ListOfListTraversal {
         listA.add(28);
         listA.add(42);
 
+
+
         List<Integer> listB = new ArrayList<Integer>();
         listB.add(52);
         listB.add(63);
@@ -64,6 +66,7 @@ public class ListOfListTraversal {
         mainList.add(listC);
 
         ListOfListTraversal listTraversal = new ListOfListTraversal(mainList);
+
         ListOfListTraversal listTraversal1 = new ListOfListTraversal(mainList);
 
         System.out.println("0: " + listTraversal.next());

@@ -41,5 +41,8 @@ public class TargetSumOfTwo {
 
         System.out.println(Arrays.toString(input2));
         System.out.println(Arrays.toString( twoSum(input2, 6)));
+
+        String s="hello";
+        System.out.println();
     }
 }

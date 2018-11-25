@@ -1,4 +1,4 @@
-package com.simplymanas.learning.OverAching;
+package com.simplymanas.learning.overaching;
 
 
 import java.security.Permission;

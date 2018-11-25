@@ -10,9 +10,8 @@ import java.util.HashSet;
 public class IsUnique {
 
     public static void main(String[] args) {
-       // if (isUnique("The quick brown fx jmpss"))
 
-         if (isUnique_withoutOtherDataStructures("The quick brown fx jmp s s"))
+         if (isUnique_withoutOtherDataStructures("The quick brown"))
 
             System.out.println("unique string");
         else
@@ -21,7 +20,6 @@ public class IsUnique {
 
     public static boolean isUnique(String input) {
         HashSet<Character> uniqueCharCount = new HashSet<>();
-        //int  count=0;
 
         for (Character c : input.toCharArray()) {
            // System.out.println("reading " + c + " inside the loop: " + count++ );
@@ -34,6 +32,7 @@ public class IsUnique {
         }
         return true;
     }
+
 //alternate method
     public  static boolean isUnique_withoutOtherDataStructures(String input){
         char[] sortedArray = input.toCharArray();

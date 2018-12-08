@@ -23,14 +23,20 @@ public class WordUtils {
                 " Ha Ha! There's no real treasure You retarded egg goblin!! With " +
                 "that note, Jerry and the midgets turned purple and floated into " +
                 "outer space, doomed to wander the universe.";
-        System.out.println(wrap(str, 11));
+       // System.out.println(wrap(str, 11));
+        System.out.println(wrap3(str,11));
     }
 
-    private static String wrap(String inputStirng, int lineWdith) throws Exception {
+    //from source https://github.com/todvora/wordwrap
+    private static String wrap(String input, int lineWdith) throws Exception {
 
-        String[] wordToken = inputStirng.split(" ");
+        String[] wordToken = input.split(" ");
         StringBuilder outputString = new StringBuilder();
         String constructLine = "";
+
+        if (input == null || lineWdith < 1) {
+            throw new IllegalArgumentException("Invalid input args");
+        }
 
         try {
 
@@ -73,4 +79,30 @@ public class WordUtils {
 
         return sb.toString();
     }
+
+    public static String wrap3(final String input, final int length) {
+        if (input == null || length < 1) {
+            throw new IllegalArgumentException("Invalid input args");
+        }
+
+        final String text = input.trim();
+
+        if (text.length() > length && text.contains(" ")) {
+            final String line = text.substring(0, length);
+            final int lineBreakIndex = line.indexOf("\n");
+            final int lineLastSpaceIndex = line.lastIndexOf(" ");
+            final int inputFirstSpaceIndex = text.indexOf(" ");
+
+            final int breakIndex = lineBreakIndex > -1 ? lineBreakIndex :
+                    (lineLastSpaceIndex > -1 ? lineLastSpaceIndex : inputFirstSpaceIndex);
+
+            return text.substring(0, breakIndex) + "\n" + wrap3(text.substring(breakIndex + 1), length);
+        } else {
+            return text;
+        }
+    }
+
+
+    //apache commons implementation
+    //http://commons.apache.org/proper/commons-lang/javadocs/api-3.1/src-html/org/apache/commons/lang3/text/WordUtils.html#line.66
 }

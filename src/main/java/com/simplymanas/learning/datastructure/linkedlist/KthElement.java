@@ -32,7 +32,7 @@ public class KthElement {
         middle.setNext(last);
 
 
-        Node.printList(first);
+       // Node.printList(first);
 
     }
 

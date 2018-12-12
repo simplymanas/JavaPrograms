@@ -5,7 +5,7 @@ public class Node<T> {
     private T data;
     private Node next;
 
-    Node(T d) {
+    public Node(T d) {
         data = d;
         next = null;
     }
@@ -24,13 +24,5 @@ public class Node<T> {
 
     public void setNext(Node next) {
         this.next = next;
-    }
-
-    public static void printList(Node first){
-        Node temp=first;
-        while (temp!=null){
-            System.out.println(temp.data);
-            temp=temp.next;
-        }
     }
 }

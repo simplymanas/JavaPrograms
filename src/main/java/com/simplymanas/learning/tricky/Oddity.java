@@ -30,6 +30,21 @@ public class Oddity {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*//this odd check method fails for negetive number
  System.out.println(-5 % 2);
  public static boolean isOdd1(int input) {
